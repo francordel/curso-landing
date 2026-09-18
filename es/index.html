@@ -9,47 +9,48 @@
 <link rel="canonical" href="https://curso.francordel.com/es/"><link rel="alternate" hreflang="es" href="https://curso.francordel.com/es/"><link rel="alternate" hreflang="en" href="https://curso.francordel.com/en/"><link rel="alternate" hreflang="fr" href="https://curso.francordel.com/fr/"><link rel="alternate" hreflang="x-default" href="https://curso.francordel.com/es/">
 <link rel="icon" href="/assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&amp;family=Montserrat:wght@700;900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=Space+Grotesk:wght@400;600;700&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
 <style>
-:root{--yellow:#FFCC00;--ink:#15130B;--paper:#F4F0E5;--white:#FFFDF7;--purple:#A028F0;--navy:#0D2B36;--rule:3px solid var(--ink);--shadow:8px 8px 0 var(--ink);--shadow-sm:4px 4px 0 var(--ink)}
+:root{--yellow:#FFCC00;--ink:#15130B;--paper:#F4F0E5;--white:#FFFDF7;--purple:#A028F0;--navy:#0D2B36;--rule:3px solid var(--ink);--shadow:8px 8px 0 var(--ink);--shadow-sm:4px 4px 0 var(--ink);--font-display:"Archivo Black",Impact,sans-serif;--font-sans:"Space Grotesk",Arial,sans-serif;--font-mono:"Space Mono",ui-monospace,monospace;--halftone-dot:1.2px;--halftone-gap:9px;--halftone-color:21 19 11;--halftone-opacity:.15;--halftone-x:0;--halftone-y:0}
 *{box-sizing:border-box} html{scroll-behavior:smooth}
-body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper);line-height:1.45}
+body{margin:0;font-family:var(--font-sans);color:var(--ink);background:var(--paper);line-height:1.45}
 a{color:inherit} .wrap{max-width:1180px;margin:0 auto;padding:0 28px}
-.mono,.topbar,.kicker,.section-no,.idx,.n,figcaption,label.field,button{font-family:"IBM Plex Mono",ui-monospace,monospace}
+.mono,.kicker,.section-no,.idx,.n,figcaption{font-family:var(--font-mono)}
 .topbar{border-bottom:var(--rule);font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
 .topbar .wrap{display:flex;justify-content:space-between;gap:20px;padding-top:14px;padding-bottom:14px}
-.topbar nav{display:flex;gap:14px} .topbar a{text-decoration:none} .topbar a.cur{background:var(--purple);color:var(--ink);border:2px solid var(--ink);box-shadow:2px 2px 0 var(--ink);padding:1px 5px}
+.topbar nav{display:flex;flex-wrap:wrap;gap:6px 14px} .topbar a{text-decoration:none} .topbar a.cur{background:var(--purple);color:var(--ink);border:2px solid var(--ink);box-shadow:2px 2px 0 var(--ink);padding:1px 5px}
 header{background:var(--yellow);border-bottom:var(--rule)}
 .hero{display:grid;grid-template-columns:minmax(0,7fr) minmax(280px,4fr);min-height:690px}
 .hero-copy{padding:68px 54px 54px 0;display:flex;flex-direction:column;align-items:flex-start}
 .kicker{font-weight:600;font-size:12px;letter-spacing:.1em;text-transform:uppercase;border:var(--rule);background:var(--white);box-shadow:var(--shadow-sm);padding:8px 11px}
-h1,h2,h3{font-family:Montserrat,Arial,sans-serif}
-h1{max-width:820px;font-weight:900;font-size:clamp(48px,6.2vw,86px);letter-spacing:-.055em;line-height:.94;margin:28px 0 25px;text-wrap:balance}
+h1,h2{font-family:var(--font-display);font-weight:400;text-wrap:balance}
+h3{font-family:var(--font-sans);font-weight:700;letter-spacing:-.015em}
+h1{max-width:820px;font-size:clamp(48px,6.2vw,86px);letter-spacing:-.035em;line-height:.93;margin:28px 0 25px;overflow-wrap:normal;word-break:normal;hyphens:none}
 .sub{font-size:19px;max-width:62ch;margin:0 0 32px}
-.hero-note{margin-top:auto;font-family:"IBM Plex Mono",monospace;font-size:12px;text-transform:uppercase;letter-spacing:.06em;border:var(--rule);background:var(--paper);box-shadow:var(--shadow-sm);padding:11px 14px;max-width:48ch}
+.hero-note{margin-top:auto;font-family:var(--font-mono);font-size:12px;text-transform:uppercase;letter-spacing:.06em;border:var(--rule);background:var(--paper);box-shadow:var(--shadow-sm);padding:11px 14px;max-width:48ch}
 .portrait{position:relative;margin:32px 8px 32px 0;border:var(--rule);background:var(--purple);box-shadow:var(--shadow);overflow:hidden;min-height:626px}
 .portrait img{position:absolute;left:50%;bottom:0;transform:translateX(-49%);height:94%;width:auto;max-width:none}
 .portrait figcaption{position:absolute;left:0;right:0;bottom:0;background:var(--ink);color:var(--white);padding:13px 16px;font-size:11px;letter-spacing:.06em;text-transform:uppercase}
 .join{background:var(--navy);color:var(--white);border-bottom:var(--rule)}
 .join .wrap{display:grid;grid-template-columns:1fr 1.55fr;gap:48px;padding-top:34px;padding-bottom:34px}
-.join-copy strong{display:block;font-family:Montserrat,sans-serif;font-size:clamp(25px,3vw,40px);line-height:1.02}
+.join-copy strong{display:block;font-family:var(--font-display);font-weight:400;font-size:clamp(25px,3vw,40px);line-height:.98;letter-spacing:-.02em}
 .join-copy p{margin:12px 0 0;max-width:42ch;color:#D9E5E7;font-size:14px}
 form{display:grid;gap:13px;align-content:center;background:var(--purple);color:var(--ink);border:var(--rule);box-shadow:8px 8px 0 var(--yellow);padding:20px;margin:0 8px 8px 0}
 form .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 label.field{display:grid;gap:6px;font-size:11px;letter-spacing:.06em;text-transform:uppercase}
-input[type=text],input[type=email]{width:100%;padding:13px 14px;border:var(--rule);border-radius:0;font:16px Arial,Helvetica,sans-serif;background:var(--white);color:var(--ink);box-shadow:3px 3px 0 var(--ink)}
+input[type=text],input[type=email]{width:100%;padding:13px 14px;border:var(--rule);border-radius:0;font:500 16px var(--font-sans);background:var(--white);color:var(--ink);box-shadow:3px 3px 0 var(--ink)}
 input::placeholder{color:#665F55} input:focus{outline:4px solid var(--yellow);outline-offset:2px}
-button{padding:14px 18px;border:var(--rule);border-radius:0;background:var(--yellow);color:var(--ink);box-shadow:5px 5px 0 var(--ink);font-weight:600;font-size:14px;cursor:pointer;text-transform:uppercase;letter-spacing:.04em;transition:transform .12s ease,box-shadow .12s ease,background .12s ease}
+button{padding:14px 18px;border:var(--rule);border-radius:0;background:var(--yellow);color:var(--ink);box-shadow:5px 5px 0 var(--ink);font-family:var(--font-sans);font-weight:700;font-size:14px;cursor:pointer;text-transform:uppercase;letter-spacing:.04em;transition:transform .12s ease,box-shadow .12s ease,background .12s ease}
 button:hover{background:var(--white);transform:translate(2px,2px);box-shadow:3px 3px 0 var(--ink)} button:active{transform:translate(5px,5px);box-shadow:none} button:focus-visible{outline:4px solid var(--white);outline-offset:3px} button[disabled]{opacity:.6;cursor:wait;transform:none}
 label.c{display:flex;gap:9px;align-items:flex-start;font-size:12px;color:var(--ink)} label.c input{margin-top:3px;accent-color:var(--yellow)}
 .msg{font-weight:700;min-height:1.4em;font-size:13px} .msg.ok{color:#78E2A8} .msg.err{color:#FF9E98}
 .hp{position:absolute;left:-9999px}
 .proof{background:var(--white);border-bottom:var(--rule)} .proof .wrap{display:grid;grid-template-columns:160px 1fr;gap:28px;padding-top:22px;padding-bottom:22px}
-.proof b{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;background:var(--purple);border:var(--rule);box-shadow:var(--shadow-sm);padding:8px 10px;align-self:start} .proof span{font-size:18px;font-weight:700}
+.proof b{font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;background:var(--purple);border:var(--rule);box-shadow:var(--shadow-sm);padding:8px 10px;align-self:start} .proof span{font-size:18px;font-weight:700}
 section{padding:86px 0;border-bottom:var(--rule)}
 .section-head{display:grid;grid-template-columns:160px 1fr;gap:28px;align-items:start;margin-bottom:38px}
 .section-no{font-size:12px;letter-spacing:.08em;text-transform:uppercase;background:var(--yellow);border:var(--rule);box-shadow:var(--shadow-sm);padding:7px 9px;justify-self:start}
-h2{font-weight:900;font-size:clamp(34px,5vw,58px);letter-spacing:-.045em;line-height:1;margin:0}
+h2{font-size:clamp(34px,5vw,58px);letter-spacing:-.025em;line-height:.96;margin:0}
 .grid{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;border-top:var(--rule)}
 .grid li{display:grid;grid-template-columns:48px 1fr;gap:18px;padding:24px 26px 26px 0;border-bottom:var(--rule)}
 .grid li:nth-child(odd){border-right:var(--rule)} .grid li:nth-child(even){padding-left:26px}
@@ -61,29 +62,38 @@ h2{font-weight:900;font-size:clamp(34px,5vw,58px);letter-spacing:-.045em;line-he
 .steps .n{display:block;color:var(--ink);font-size:13px;margin-bottom:62px;font-weight:600} .steps h3{margin:0 0 8px;font-size:20px} .steps p{margin:0}
 .about{background:var(--yellow)} .about-grid{display:grid;grid-template-columns:160px 1fr;gap:28px} .about .section-no{background:var(--purple)} .about-grid>div{background:var(--white);border:var(--rule);box-shadow:var(--shadow);padding:32px;margin:0 8px 8px 0} .about p{font-size:clamp(20px,2.4vw,30px);font-weight:700;line-height:1.35;max-width:48ch;margin:20px 0 0}
 .faq-list{border-top:var(--rule)} details{border-bottom:var(--rule);padding:0}
-summary{display:grid;grid-template-columns:70px 1fr auto;align-items:center;gap:10px;padding:20px 0;font-family:Montserrat,sans-serif;font-size:18px;font-weight:700;cursor:pointer;list-style:none}
-summary::-webkit-details-marker{display:none} summary span{display:inline-grid;place-items:center;width:34px;height:34px;background:var(--purple);border:2px solid var(--ink);box-shadow:3px 3px 0 var(--ink);font-family:"IBM Plex Mono",monospace;color:var(--ink);font-size:12px} summary::after{content:"+";font-family:"IBM Plex Mono",monospace;font-size:26px;font-weight:500} details[open]{background:var(--yellow)} details[open] summary::after{content:"−"}
+summary{display:grid;grid-template-columns:70px 1fr auto;align-items:center;gap:10px;padding:20px 0;font-family:var(--font-sans);font-size:18px;font-weight:700;cursor:pointer;list-style:none}
+summary::-webkit-details-marker{display:none} summary span{display:inline-grid;place-items:center;width:34px;height:34px;background:var(--purple);border:2px solid var(--ink);box-shadow:3px 3px 0 var(--ink);font-family:var(--font-mono);color:var(--ink);font-size:12px} summary::after{content:"+";font-family:var(--font-mono);font-size:26px;font-weight:400} details[open]{background:var(--yellow)} details[open] summary::after{content:"−"}
 details p{margin:0 0 22px 70px;max-width:70ch;font-size:16px}
-.cta2{margin:34px 0 8px 70px} .cta2 a{display:inline-block;background:var(--purple);color:var(--ink);text-decoration:none;font-family:"IBM Plex Mono",monospace;font-weight:600;padding:14px 18px;border:var(--rule);box-shadow:var(--shadow-sm);text-transform:uppercase;font-size:13px;transition:transform .12s ease,box-shadow .12s ease}
+.cta2{margin:34px 0 8px 70px} .cta2 a{display:inline-block;background:var(--purple);color:var(--ink);text-decoration:none;font-family:var(--font-sans);font-weight:700;padding:14px 18px;border:var(--rule);box-shadow:var(--shadow-sm);text-transform:uppercase;font-size:13px;transition:transform .12s ease,box-shadow .12s ease}
 .cta2 a:hover{background:var(--yellow);transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)} .cta2 a:active{transform:translate(4px,4px);box-shadow:none}
-footer{background:var(--ink);color:var(--white);padding:48px 0;font-size:14px} footer .foot-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px} footer strong{font-family:Montserrat,sans-serif;font-size:20px} footer .acc{display:flex;flex-wrap:wrap;gap:8px 18px;margin:16px 0 0} footer a{color:var(--yellow);text-decoration:none;font-weight:700} footer a.cur{color:#fff;text-decoration:underline} footer .privacy{opacity:.68;margin:20px 0 0;max-width:60ch}
-@media(max-width:820px){.wrap{padding-left:20px;padding-right:20px} .topbar .wrap{align-items:flex-start} .hero{grid-template-columns:1fr;min-height:0} .hero-copy{padding:48px 0 38px;min-height:570px} h1{font-size:clamp(43px,13vw,68px)} .portrait{margin:0 8px 30px 0;min-height:520px} .portrait img{height:100%} .join .wrap,.proof .wrap,.section-head,.about-grid,footer .foot-grid{grid-template-columns:1fr;gap:16px} .join .wrap{padding-top:30px;padding-bottom:30px} form .row{grid-template-columns:1fr} section{padding:62px 0} .grid{grid-template-columns:1fr} .grid li:nth-child(odd){border-right:0} .grid li:nth-child(even){padding-left:0} .steps{grid-template-columns:1fr} .steps li{min-height:0;padding:22px} .steps li+li{border-left:0;border-top:var(--rule)} .steps .n{margin-bottom:22px} .about-grid>div{padding:22px} details p{margin-left:0;padding:0 18px 20px} .cta2{margin-left:0}}
+footer{background:var(--ink);color:var(--white);padding:48px 0;font-size:14px} footer .foot-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px} footer strong{font-family:var(--font-display);font-weight:400;font-size:20px;letter-spacing:-.01em} footer .acc{display:flex;flex-wrap:wrap;gap:8px 18px;margin:16px 0 0} footer a{color:var(--yellow);text-decoration:none;font-weight:700} footer a.cur{color:#fff;text-decoration:underline} footer .privacy{opacity:.68;margin:20px 0 0;max-width:60ch}
+.halftone{background-image:radial-gradient(circle,rgb(var(--halftone-color)/var(--halftone-opacity)) 0 var(--halftone-dot),transparent calc(var(--halftone-dot) + .45px));background-size:var(--halftone-gap) var(--halftone-gap);background-position:var(--halftone-x) var(--halftone-y)}
+.halftone-subtle{--halftone-dot:1px;--halftone-gap:11px;--halftone-opacity:.10}
+.halftone-strong{--halftone-dot:1.5px;--halftone-gap:8px;--halftone-opacity:.19}
+header.halftone{--halftone-opacity:.075;--halftone-x:2px;--halftone-y:2px}
+.portrait.halftone{--halftone-color:255 253 247;--halftone-dot:1.25px;--halftone-gap:9px;--halftone-opacity:.18;--halftone-x:3px}
+form.halftone{--halftone-opacity:.17}
+.steps li.halftone{--halftone-opacity:.15}
+.about.halftone{--halftone-opacity:.085;--halftone-x:4px;--halftone-y:4px}
+@media(max-width:820px){.wrap{padding-left:20px;padding-right:20px} .topbar .wrap{align-items:flex-start;flex-wrap:wrap} .hero{grid-template-columns:1fr;min-height:0} .hero-copy{padding:48px 0 38px;min-height:570px} h1{font-size:clamp(41px,12.5vw,64px);line-height:.95;letter-spacing:-.025em} h2{line-height:.98} .portrait{margin:0 8px 30px 0;min-height:520px} .portrait img{height:100%} .join .wrap,.proof .wrap,.section-head,.about-grid,footer .foot-grid{grid-template-columns:1fr;gap:16px} .join .wrap{padding-top:30px;padding-bottom:30px} form .row{grid-template-columns:1fr} section{padding:62px 0} .grid{grid-template-columns:1fr} .grid li:nth-child(odd){border-right:0} .grid li:nth-child(even){padding-left:0} .steps{grid-template-columns:1fr} .steps li{min-height:0;padding:22px} .steps li+li{border-left:0;border-top:var(--rule)} .steps .n{margin-bottom:22px} .about-grid>div{padding:22px} details p{margin-left:0;padding:0 18px 20px} .cta2{margin-left:0} .halftone{--halftone-dot:.9px;--halftone-gap:10px} .halftone-strong{--halftone-dot:1.2px;--halftone-gap:9px;--halftone-opacity:.15} header.halftone{--halftone-opacity:.055} .portrait.halftone{--halftone-opacity:.14} .about.halftone{--halftone-opacity:.06}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto} button,.cta2 a{transition:none}}
 </style>
 </head>
 <body>
 <div class="topbar"><div class="wrap"><a href="/es/">francordel / curso—01</a><nav aria-label="Idiomas"><a href="/es/" class=cur hreflang="es">Español</a> · <a href="/en/"  hreflang="en">English</a> · <a href="/fr/"  hreflang="fr">Français</a></nav></div></div>
-<header><div class="wrap hero">
+<header class="halftone halftone-subtle"><div class="wrap hero">
  <div class="hero-copy">
   <span class="kicker">Curso · Lista de espera</span>
   <h1>Aprende a montar el sistema que edita y publica mis vídeos por mí</h1>
   <p class="sub">Un curso práctico para programadores: agentes de IA que escriben el guion, clonan tu voz, montan el vídeo, ponen los subtítulos, crean la portada y lo programan en Instagram, TikTok y YouTube. Apúntate y te aviso cuando abra.</p>
   <p class="hero-note">Investigación en IA × software × producción de vídeo</p>
  </div>
- <figure class="portrait"><img src="/assets/fran.png" alt="Fran" width="528" height="900"><figcaption>Fran Cordel — investigador y programador</figcaption></figure>
+ <figure class="portrait halftone"><img src="/assets/fran.png" alt="Fran" width="528" height="900"><figcaption>Fran Cordel — investigador y programador</figcaption></figure>
 </div></header>
 <section class="join"><div class="wrap">
  <div class="join-copy"><strong>Quiero estar en la lista</strong><p>Solo uso tu email para avisarte del curso. Puedes pedir que lo borre escribiendo a la misma dirección desde la que te escribo.</p></div>
- <form id="f" novalidate>
+ <form id="f" class="halftone halftone-strong" novalidate>
   <div class="row"><label class="field"><span>Tu nombre</span><input type="text" name="name" autocomplete="name"></label><label class="field"><span>Tu email</span><input type="email" name="email" autocomplete="email" required></label></div>
   <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off">
   <label class="c"><input type="checkbox" name="consent" required><span>Acepto que me escribas por email cuando abra el curso. Sin spam, te das de baja cuando quieras.</span></label>
@@ -93,8 +103,8 @@ footer{background:var(--ink);color:var(--white);padding:48px 0;font-size:14px} f
 </div></section>
 <div class="proof"><div class="wrap"><b>Nota de producción</b><span>Así se hacen los vídeos de @francordel.ia: dos al día, en tres idiomas, con mi voz clonada y sin abrir un editor.</span></div></div>
 <section><div class="wrap"><div class="section-head"><span class="section-no">01 / temario</span><h2>Lo que vas a aprender</h2></div><ul class="grid"><li><span class="idx">01</span><div><h3>Buscar temas</h3><p>Qué se está moviendo en tu nicho cada semana, sin pasarte la tarde en Twitter.</p></div></li><li><span class="idx">02</span><div><h3>Guion y voz</h3><p>Guiones de 30 segundos que enganchan y tu voz clonada que los lee por ti.</p></div></li><li><span class="idx">03</span><div><h3>Montaje automático</h3><p>Tus planos de cara y de trabajo, el b-roll y las composiciones, cortados a la palabra.</p></div></li><li><span class="idx">04</span><div><h3>Subtítulos con estilo</h3><p>Karaoke, cápsulas y momentos de dirección de arte que se colocan solos.</p></div></li><li><span class="idx">05</span><div><h3>Portadas y pies</h3><p>Portada, descripción y hashtags de cada vídeo, en cada idioma.</p></div></li><li><span class="idx">06</span><div><h3>Publicar sin tocar nada</h3><p>El agente programa en Instagram, TikTok y YouTube y responde a los comentarios.</p></div></li></ul></div></section>
-<section class="process"><div class="wrap"><div class="section-head"><span class="section-no">02 / proceso</span><h2>Cómo funciona</h2></div><ol class="steps"><li><span class="n">01</span><div><h3>Grabas una tarde de planos</h3><p>Gestos, manos, pantalla. Un banco de planos genéricos que vale para cientos de vídeos.</p></div></li><li><span class="n">02</span><div><h3>El agente produce</h3><p>Tema, guion, voz, montaje, subtítulos, portada y pie. Tú miras una hoja de contactos.</p></div></li><li><span class="n">03</span><div><h3>Revisas y publicas</h3><p>Corriges lo que quieras y el agente lo deja programado en tus cuentas.</p></div></li></ol></div></section>
-<section class="about"><div class="wrap about-grid"><span class="section-no">03 / Fran</span><div><h2>Quién te lo enseña</h2><p>Soy Fran. Investigador en IA y programador: he investigado en IBM Research Dublin, he hecho una estancia en la Universidad de Cambridge, investigo en la Universidad de Murcia y fui backend engineer en Vodafone. He creado la mayor aplicación del mundo para aprender sintaxis y llevo el canal @francordel. Doy el curso yo, en español, inglés y francés.</p></div></div></section>
+<section class="process"><div class="wrap"><div class="section-head"><span class="section-no">02 / proceso</span><h2>Cómo funciona</h2></div><ol class="steps"><li><span class="n">01</span><div><h3>Grabas una tarde de planos</h3><p>Gestos, manos, pantalla. Un banco de planos genéricos que vale para cientos de vídeos.</p></div></li><li class="halftone halftone-strong"><span class="n">02</span><div><h3>El agente produce</h3><p>Tema, guion, voz, montaje, subtítulos, portada y pie. Tú miras una hoja de contactos.</p></div></li><li><span class="n">03</span><div><h3>Revisas y publicas</h3><p>Corriges lo que quieras y el agente lo deja programado en tus cuentas.</p></div></li></ol></div></section>
+<section class="about halftone halftone-subtle"><div class="wrap about-grid"><span class="section-no">03 / Fran</span><div><h2>Quién te lo enseña</h2><p>Soy Fran. Investigador en IA y programador: he investigado en IBM Research Dublin, he hecho una estancia en la Universidad de Cambridge, investigo en la Universidad de Murcia y fui backend engineer en Vodafone. He creado la mayor aplicación del mundo para aprender sintaxis y llevo el canal @francordel. Doy el curso yo, en español, inglés y francés.</p></div></div></section>
 <section><div class="wrap"><div class="section-head"><span class="section-no">04 / FAQ</span><h2>Preguntas</h2></div><div class="faq-list"><details><summary><span>01</span>¿Necesito saber programar?</summary><p>Sí, lo básico: moverte por la terminal y leer Python. El agente hace el resto.</p></details><details><summary><span>02</span>¿Qué herramientas se usan?</summary><p>Claude Code o Codex, ElevenLabs para la voz, Whisper, ffmpeg y Remotion. Casi todo es gratis u open source.</p></details><details><summary><span>03</span>¿Cuándo abre?</summary><p>Cuando la lista tenga gente suficiente. Te escribo por email; no hay fecha cerrada todavía.</p></details><details><summary><span>04</span>¿En qué idioma es?</summary><p>En español, inglés y francés. Lo doy yo en los tres.</p></details><details><summary><span>05</span>¿Cuánto cuesta?</summary><p>Aún no está cerrado. Quien esté en la lista tendrá el mejor precio.</p></details></div><p class="cta2"><a href="#f">Quiero estar en la lista</a></p></div></section>
 <footer><div class="wrap foot-grid"><div><strong>Sígueme donde publico estos vídeos</strong><div class="acc"><a href="https://www.instagram.com/francordel.ia" target="_blank" rel="noopener">Instagram ES</a><a href="https://www.instagram.com/francordel.en" target="_blank" rel="noopener">Instagram EN</a><a href="https://www.instagram.com/francordel.fr" target="_blank" rel="noopener">Instagram FR</a><a href="https://www.youtube.com/@francordel_ia" target="_blank" rel="noopener">YouTube</a><a href="https://www.tiktok.com/@francordel.ia" target="_blank" rel="noopener">TikTok</a></div></div><div><div>Idiomas: <a href="/es/" class=cur hreflang="es">Español</a> · <a href="/en/"  hreflang="en">English</a> · <a href="/fr/"  hreflang="fr">Français</a></div><p class="privacy">Solo uso tu email para avisarte del curso. Puedes pedir que lo borre escribiendo a la misma dirección desde la que te escribo.</p></div></div></footer>
 <script>
