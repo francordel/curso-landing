@@ -133,7 +133,7 @@ async function loadProgress(){try{const r=await fetch(API+'/api/waitlist-count',
 loadProgress();
 f.addEventListener('submit',async ev=>{ev.preventDefault();const d=Object.fromEntries(new FormData(f).entries());if(!d.email||!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(d.email)||!d.consent){f.reportValidity();return}
 const b=f.querySelector('button');b.disabled=true;m.className='msg';m.textContent='…';
-try{const r=await fetch(API+'/api/waitlist',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({email:d.email,name:d.name||'',lang:'es',website:d.website||'',path:location.pathname,ref:document.referrer})});const j=await r.json();
+try{const r=await fetch(API+'/api/waitlist',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({email:d.email,name:d.name||'',lang:'es',website:d.website||'',path:location.pathname,ref:document.referrer,q:location.search})});const j=await r.json();
 if(j.ok){m.className='msg ok';m.textContent=j.dup?T.dup:T.ok;if(!j.dup){if(currentCount!==null)setProgress(currentCount+1);m2.textContent=T.okmail;m2.className='msg2 show';setTimeout(loadProgress,1200)}f.reset()}else{m.className='msg err';m.textContent=T.err}}catch(e){m.className='msg err';m.textContent=T.err}b.disabled=false});})();
 </script>
 </body></html>
